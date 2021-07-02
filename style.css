@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --squre-color: rgb(255, 255, 255);
+  }
+  header{
+      background-image: url('images/banner.jpg');
+      height: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+header h1{
+    font-size: 40px;
+    padding-left: 100px;
+    color: var(--squre-color);
+}
+header .place{
+    margin-top: 38%;
+    padding-left: 30%;
+}
+header ul{
+    list-style: none;
+    
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+li a{
+    text-decoration: none;
+    color: var(--squre-color);
+}
+li a:hover{
+    border-bottom: 2px solid orange;
+    color: rgb(218, 226, 218);
+}
+
+
+.Services h1{
+    font-weight: bold;
+    color: rgb(27, 117, 27);
+}
+.Services p{
+    color: rgb(112, 112, 112);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.card{
+    align-items: center;
+    box-shadow: 16px 15px 39px -4px rgba(42,41,46,0.63);
+-webkit-box-shadow: 16px 15px 39px -4px rgba(42,41,46,0.63);
+-moz-box-shadow: 16px 15px 39px -4px rgba(42,41,46,0.63);
+border-radius: 50px;
+transition: 0.2s;
+}
+.card h4{
+    font-size: 20px;
+ color: rgb(27, 119, 39);
+}
+.card img{
+    width: 100px;
+    border-radius: 50%;
+}
+.card p{
+    font-size: 15px;
+    color: gray;
+}
+.card:hover {
+    transform: scale(1.04); 
+  }
+ .work img{
+     border-radius: 50px;
+ }
+ .contact{
+     background-image: url('images/pexels-dominika-roseclay-1036808.jpg');
+     background-size: cover;
+     height: 70vh;
+     background-position: bottom;
+     background-repeat: no-repeat;
+ }
+ .email{
+     position: fixed;
+     bottom:50px;
+     right: 30px;
+     cursor: pointer;
+ }
+ @media(max-width:768px){
+    .contact{
+        height: 40vh;
+        background-position: bottom;
+    }
+    header .place{
+        margin-top: 38%;
+        padding-left: 5%;
+    }
+    header h1{
+        display: none;
+    }
+ }
+ @media(max-width:420px){
+    .contact{
+        height: 140vh;
+        background-position: bottom;
+    }
+    header h1{
+        display: none;
+    }
+    ul li{
+        background-color: rgba(83, 88, 88, 0.568);
+        display: block;
+        padding: 0%;
+        font-size: 20px;
+    }
+    .place{
+        display: none;
+    }
+
+ }
